@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Date时间日期类 | wzeq13的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Date时间日期类一、包java.until.Date;  表示日期和时间的类 二、概念Date:表示特定的瞬间，精确到毫秒 毫秒 = 千分之一秒 时间原点：Thu Jan 01 00:00:00 GMT1970 格林乔治时间 ，北京在东八区换成北京时间需要加8 获取当前时间：获取时间原点到现在的毫秒数，将毫秒转换为天数，算出当前时间">
+  <meta name="description" content="DateFormat 类一、包java.text.DateFormat 二、概览将日期时间格式化的子类抽象类，通过此类将日期和文本进行转换，也就是讲Date和String转换  格式化：按照格式，将Date转换为String 解析：按照格式，将String转换为Date">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Date时间日期类">
-<meta property="og:url" content="http://yoursite.com/2019/08/25/Date时间日期类/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/25/DateFormat 类/index.html">
 <meta property="og:site_name" content="wzeq13的博客">
-<meta property="og:description" content="Date时间日期类一、包java.until.Date;  表示日期和时间的类 二、概念Date:表示特定的瞬间，精确到毫秒 毫秒 = 千分之一秒 时间原点：Thu Jan 01 00:00:00 GMT1970 格林乔治时间 ，北京在东八区换成北京时间需要加8 获取当前时间：获取时间原点到现在的毫秒数，将毫秒转换为天数，算出当前时间">
+<meta property="og:description" content="DateFormat 类一、包java.text.DateFormat 二、概览将日期时间格式化的子类抽象类，通过此类将日期和文本进行转换，也就是讲Date和String转换  格式化：按照格式，将Date转换为String 解析：按照格式，将String转换为Date">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-25T12:57:33.506Z">
+<meta property="og:updated_time" content="2019-08-25T12:57:55.272Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Date时间日期类">
-<meta name="twitter:description" content="Date时间日期类一、包java.until.Date;  表示日期和时间的类 二、概念Date:表示特定的瞬间，精确到毫秒 毫秒 = 千分之一秒 时间原点：Thu Jan 01 00:00:00 GMT1970 格林乔治时间 ，北京在东八区换成北京时间需要加8 获取当前时间：获取时间原点到现在的毫秒数，将毫秒转换为天数，算出当前时间">
+<meta name="twitter:description" content="DateFormat 类一、包java.text.DateFormat 二、概览将日期时间格式化的子类抽象类，通过此类将日期和文本进行转换，也就是讲Date和String转换  格式化：按照格式，将Date转换为String 解析：按照格式，将String转换为Date">
   
     <link rel="alternative" href="/atom.xml" title="wzeq13的博客" type="application/atom+xml">
   
@@ -165,7 +165,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Date时间日期类" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-DateFormat 类" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -177,31 +177,180 @@
   
 
         
-        <a href="/2019/08/25/Date时间日期类/" class="archive-article-date">
-  	<time datetime="2019-08-25T12:19:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
+        <a href="/2019/08/25/DateFormat 类/" class="archive-article-date">
+  	<time datetime="2019-08-25T12:57:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Date时间日期类"><a href="#Date时间日期类" class="headerlink" title="Date时间日期类"></a>Date时间日期类</h3><h4 id="一、包"><a href="#一、包" class="headerlink" title="一、包"></a>一、包</h4><p>java.until.Date;  表示日期和时间的类</p>
-<h4 id="二、概念"><a href="#二、概念" class="headerlink" title="二、概念"></a>二、概念</h4><p>Date:表示特定的瞬间，精确到毫秒</p>
-<p>毫秒 = 千分之一秒</p>
-<p>时间原点：Thu Jan 01 00:00:00 GMT1970 格林乔治时间 ，北京在东八区换成北京时间需要加8</p>
-<p>获取当前时间：获取时间原点到现在的毫秒数，将毫秒转换为天数，算出当前时间</p>
+        <h3 id="DateFormat-类"><a href="#DateFormat-类" class="headerlink" title="DateFormat 类"></a>DateFormat 类</h3><h4 id="一、包"><a href="#一、包" class="headerlink" title="一、包"></a>一、包</h4><p>java.text.DateFormat</p>
+<h4 id="二、概览"><a href="#二、概览" class="headerlink" title="二、概览"></a>二、概览</h4><p>将日期时间格式化的子类抽象类，通过此类将日期和文本进行转换，也就是讲Date和String转换</p>
+<ul>
+<li>格式化：按照格式，将Date转换为String</li>
+<li>解析：按照格式，将String转换为Date</li>
+</ul>
 <a id="more"></a>
-<h4 id="三、构造函数"><a href="#三、构造函数" class="headerlink" title="三、构造函数"></a>三、构造函数</h4><p>Date()</p>
-<p>默认构造函数，直接输出系统时间</p>
-<p>Date(long date)</p>
-<p>long date：表示从时间原点到现在经历多少毫秒</p>
-<p>构造一个时间原点+date的日期时间</p>
-<p>Example</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Mydate</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        demo01();</span><br><span class="line">        demo02();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">demo01</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Date date = <span class="keyword">new</span> Date();</span><br><span class="line">        System.out.println(date); <span class="comment">//Wed Jun 19 17:08:25 CST 2019 默认构造函数，输出当前时间</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">demo02</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Date date = <span class="keyword">new</span> Date(<span class="number">0</span>);<span class="comment">//表示从时间原点过了多少秒</span></span><br><span class="line">        System.out.println(date); <span class="comment">//Thu Jan 01 08:00:00 CST 1970 时间原点时间</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="四、方法"><a href="#四、方法" class="headerlink" title="四、方法"></a>四、方法</h4><p>long GetTime();</p>
-<p>返回当前时间到时间原点的毫秒数</p>
-<p>example：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Date date = <span class="keyword">new</span> Date();</span><br><span class="line"><span class="keyword">long</span> time = date.getTime();</span><br><span class="line">System.out.println(time);</span><br><span class="line"><span class="comment">//1560938688566</span></span><br></pre></td></tr></table></figure>
+<h3 id="三、方法"><a href="#三、方法" class="headerlink" title="三、方法"></a>三、方法</h3><p>String format(Date date);</p>
+<p>将日期格式化为字符串</p>
+<p>Date parse(String Source);</p>
+<p>将字符串解析为日期对象</p>
+<h4 id="四、SimpleDateFormat类"><a href="#四、SimpleDateFormat类" class="headerlink" title="四、SimpleDateFormat类"></a>四、SimpleDateFormat类</h4><p>SimpleDateFormat类继承自DateFormat，由于dateformat是抽象类不能实例化对象，所以要用SimpleDateFormat类操作</p>
+<h5 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h5><p>SimpleDateFormat(String pattern) 用给定的模式和默认的语言环境的日期格式符号构造</p>
+<p>pattern参数为指定的模式</p>
+<p>example</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyFormatDate</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        demo01();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">demo01</span><span class="params">()</span></span>&#123;</span><br><span class="line">        String parrent = <span class="string">"yyyy-MM-dd"</span>;</span><br><span class="line">        SimpleDateFormat simpleDateFormat = <span class="keyword">new</span> SimpleDateFormat(parrent);</span><br><span class="line">        Date date = <span class="keyword">new</span> Date();</span><br><span class="line">        System.out.println(simpleDateFormat.format(date));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//2019-06-22</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Letter</th>
+<th style="text-align:left">Date or Time Component</th>
+<th style="text-align:left">Presentation</th>
+<th style="text-align:left">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>G</code></td>
+<td style="text-align:left">Era designator</td>
+<td style="text-align:left"><a href="#text">Text</a></td>
+<td style="text-align:left"><code>AD</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>y</code></td>
+<td style="text-align:left">Year</td>
+<td style="text-align:left"><a href="#year">Year</a></td>
+<td style="text-align:left"><code>1996</code>; <code>96</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Y</code></td>
+<td style="text-align:left">Week year</td>
+<td style="text-align:left"><a href="#year">Year</a></td>
+<td style="text-align:left"><code>2009</code>; <code>09</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>M</code></td>
+<td style="text-align:left">Month in year (context sensitive)</td>
+<td style="text-align:left"><a href="#month">Month</a></td>
+<td style="text-align:left"><code>July</code>; <code>Jul</code>; <code>07</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>L</code></td>
+<td style="text-align:left">Month in year (standalone form)</td>
+<td style="text-align:left"><a href="#month">Month</a></td>
+<td style="text-align:left"><code>July</code>; <code>Jul</code>; <code>07</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>w</code></td>
+<td style="text-align:left">Week in year</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>27</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>W</code></td>
+<td style="text-align:left">Week in month</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>D</code></td>
+<td style="text-align:left">Day in year</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>189</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>d</code></td>
+<td style="text-align:left">Day in month</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>10</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>F</code></td>
+<td style="text-align:left">Day of week in month</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>E</code></td>
+<td style="text-align:left">Day name in week</td>
+<td style="text-align:left"><a href="#text">Text</a></td>
+<td style="text-align:left"><code>Tuesday</code>; <code>Tue</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>u</code></td>
+<td style="text-align:left">Day number of week (1 = Monday, …, 7 = Sunday)</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>1</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>a</code></td>
+<td style="text-align:left">Am/pm marker</td>
+<td style="text-align:left"><a href="#text">Text</a></td>
+<td style="text-align:left"><code>PM</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>H</code></td>
+<td style="text-align:left">Hour in day (0-23)</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>k</code></td>
+<td style="text-align:left">Hour in day (1-24)</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>24</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>K</code></td>
+<td style="text-align:left">Hour in am/pm (0-11)</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>h</code></td>
+<td style="text-align:left">Hour in am/pm (1-12)</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>12</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>m</code></td>
+<td style="text-align:left">Minute in hour</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>30</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>s</code></td>
+<td style="text-align:left">Second in minute</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>55</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>S</code></td>
+<td style="text-align:left">Millisecond</td>
+<td style="text-align:left"><a href="#number">Number</a></td>
+<td style="text-align:left"><code>978</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>z</code></td>
+<td style="text-align:left">Time zone</td>
+<td style="text-align:left"><a href="#timezone">General time zone</a></td>
+<td style="text-align:left"><code>Pacific Standard Time</code>; <code>PST</code>; <code>GMT-08:00</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Z</code></td>
+<td style="text-align:left">Time zone</td>
+<td style="text-align:left"><a href="#rfc822timezone">RFC 822 time zone</a></td>
+<td style="text-align:left"><code>-0800</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>X</code></td>
+<td style="text-align:left">Time zone</td>
+<td style="text-align:left"><a href="#iso8601timezone">ISO 8601 time zone</a></td>
+<td style="text-align:left"><code>-08</code>; <code>-0800</code>; <code>-08:00</code></td>
+</tr>
+</tbody>
+</table>
 
       
 
@@ -303,7 +452,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/25/Date时间日期类/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/25/DateFormat 类/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -317,18 +466,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/25/DateFormat 类/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Date时间日期类
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/05/10/2019-05-10-文件操作/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">文件操作</div>
+    <a href="/2019/08/25/Date时间日期类/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Date时间日期类</div>
       <i class="icon-circle-right"></i>
     </a>
   
