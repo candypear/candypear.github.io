@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>框架设计的灵魂——反射 | wzeq13的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="框架设计的灵魂——反射toc: true 什么是反射 JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制。  反射实则是把java中类的各个部分封装成一个个对象">
+  <meta name="description" content="框架设计的灵魂——反射什么是反射 JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制。  反射实则是把java中类的各个部分封装成一个个对象">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="框架设计的灵魂——反射">
 <meta property="og:url" content="http://yoursite.com/2019/08/26/反射/index.html">
 <meta property="og:site_name" content="wzeq13的博客">
-<meta property="og:description" content="框架设计的灵魂——反射toc: true 什么是反射 JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制。  反射实则是把java中类的各个部分封装成一个个对象">
+<meta property="og:description" content="框架设计的灵魂——反射什么是反射 JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制。  反射实则是把java中类的各个部分封装成一个个对象">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-26T05:01:14.266Z">
+<meta property="og:updated_time" content="2019-08-26T05:13:02.547Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="框架设计的灵魂——反射">
-<meta name="twitter:description" content="框架设计的灵魂——反射toc: true 什么是反射 JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制。  反射实则是把java中类的各个部分封装成一个个对象">
+<meta name="twitter:description" content="框架设计的灵魂——反射什么是反射 JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制。  反射实则是把java中类的各个部分封装成一个个对象">
   
     <link rel="alternative" href="/atom.xml" title="wzeq13的博客" type="application/atom+xml">
   
@@ -183,13 +183,9 @@
         
       </header>
     
-	<!-- 目录内容 -->
-
-<!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="框架设计的灵魂——反射"><a href="#框架设计的灵魂——反射" class="headerlink" title="框架设计的灵魂——反射"></a>框架设计的灵魂——反射</h1><p>toc: true</p>
-<h2 id="什么是反射"><a href="#什么是反射" class="headerlink" title="什么是反射"></a>什么是反射</h2><ul>
+        <h1 id="框架设计的灵魂——反射"><a href="#框架设计的灵魂——反射" class="headerlink" title="框架设计的灵魂——反射"></a>框架设计的灵魂——反射</h1><h2 id="什么是反射"><a href="#什么是反射" class="headerlink" title="什么是反射"></a>什么是反射</h2><ul>
 <li><p>JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制。</p>
 </li>
 <li><p>反射实则是把java中类的各个部分封装成一个个对象</p>
@@ -399,6 +395,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#框架设计的灵魂——反射"><span class="toc-number">1.</span> <span class="toc-text">框架设计的灵魂——反射</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是反射"><span class="toc-number">1.1.</span> <span class="toc-text">什么是反射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.2.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取类的三种方法"><span class="toc-number">1.3.</span> <span class="toc-text">获取类的三种方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取类中的成员变量"><span class="toc-number">1.4.</span> <span class="toc-text">获取类中的成员变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#读取和修改成员变量"><span class="toc-number">1.4.1.</span> <span class="toc-text">读取和修改成员变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#获取公有成员的值"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">获取公有成员的值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取私有变量的值"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">获取私有变量的值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#修改私有变量的值"><span class="toc-number">1.4.1.3.</span> <span class="toc-text">修改私有变量的值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#暴力反射"><span class="toc-number">1.4.2.</span> <span class="toc-text">暴力反射</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取类中方法"><span class="toc-number">1.5.</span> <span class="toc-text">获取类中方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#获取无参构造方法"><span class="toc-number">1.5.0.1.</span> <span class="toc-text">获取无参构造方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取有参构造方法"><span class="toc-number">1.5.0.2.</span> <span class="toc-text">获取有参构造方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调用方法"><span class="toc-number">1.5.1.</span> <span class="toc-text">调用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#调用无参方法"><span class="toc-number">1.5.1.1.</span> <span class="toc-text">调用无参方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#调用有参方法"><span class="toc-number">1.5.1.2.</span> <span class="toc-text">调用有参方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取构造方法"><span class="toc-number">1.6.</span> <span class="toc-text">获取构造方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#获取无参构造方法-1"><span class="toc-number">1.6.1.</span> <span class="toc-text">获取无参构造方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取有参构造方法-1"><span class="toc-number">1.6.2.</span> <span class="toc-text">获取有参构造方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用构造方法创建实例对象"><span class="toc-number">1.6.3.</span> <span class="toc-text">使用构造方法创建实例对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取类名"><span class="toc-number">1.7.</span> <span class="toc-text">获取类名</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -440,7 +449,7 @@
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: true,
 		showTags: false
