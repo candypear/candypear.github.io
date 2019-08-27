@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>初识迭代器 | wzeq13的博客</title>
+  <title>java中的注解 | wzeq13的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用迭代器我们知道string对象或者vector对象可以用下表访问，除了下表c++还提供了迭代器访问 我们可以通过begin和end方法获取迭代器 此外迭代器的语法与指针相类似 12auto b = v.begin();auto e = v.end();">
-<meta name="keywords" content="cpp">
+  <meta name="description" content="java中的注解概念 说明程序，给计算机看的注释 定义: 注解（Annotation），也叫元数据。一种代码级别的说明。它是JDK1.5及以后版本引入的一个特性，与类、接口、枚举是在同一个层次。它可以声明在包、类、字段、方法、局部变量、方法参数等的前面，用来对这些元素进行说明，注释。  作用分类：1.编写文档：通过代码里标识的元数据生成文档【生成文档doc文档】2.代码分析：通过代码里标识的元数据">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初识迭代器">
-<meta property="og:url" content="http://yoursite.com/2019/04/24/初识迭代器/index.html">
+<meta property="og:title" content="java中的注解">
+<meta property="og:url" content="http://yoursite.com/2019/08/27/java中的注解/index.html">
 <meta property="og:site_name" content="wzeq13的博客">
-<meta property="og:description" content="使用迭代器我们知道string对象或者vector对象可以用下表访问，除了下表c++还提供了迭代器访问 我们可以通过begin和end方法获取迭代器 此外迭代器的语法与指针相类似 12auto b = v.begin();auto e = v.end();">
+<meta property="og:description" content="java中的注解概念 说明程序，给计算机看的注释 定义: 注解（Annotation），也叫元数据。一种代码级别的说明。它是JDK1.5及以后版本引入的一个特性，与类、接口、枚举是在同一个层次。它可以声明在包、类、字段、方法、局部变量、方法参数等的前面，用来对这些元素进行说明，注释。  作用分类：1.编写文档：通过代码里标识的元数据生成文档【生成文档doc文档】2.代码分析：通过代码里标识的元数据">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-24T11:33:39.663Z">
+<meta property="og:updated_time" content="2019-08-27T14:01:34.531Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初识迭代器">
-<meta name="twitter:description" content="使用迭代器我们知道string对象或者vector对象可以用下表访问，除了下表c++还提供了迭代器访问 我们可以通过begin和end方法获取迭代器 此外迭代器的语法与指针相类似 12auto b = v.begin();auto e = v.end();">
+<meta name="twitter:title" content="java中的注解">
+<meta name="twitter:description" content="java中的注解概念 说明程序，给计算机看的注释 定义: 注解（Annotation），也叫元数据。一种代码级别的说明。它是JDK1.5及以后版本引入的一个特性，与类、接口、枚举是在同一个层次。它可以声明在包、类、字段、方法、局部变量、方法参数等的前面，用来对这些元素进行说明，注释。  作用分类：1.编写文档：通过代码里标识的元数据生成文档【生成文档doc文档】2.代码分析：通过代码里标识的元数据">
   
     <link rel="alternative" href="/atom.xml" title="wzeq13的博客" type="application/atom+xml">
   
@@ -172,20 +172,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-初识迭代器" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-java中的注解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      初识迭代器
+      java中的注解
     </h1>
   
 
         
-        <a href="/2019/04/24/初识迭代器/" class="archive-article-date">
-  	<time datetime="2019-04-24T05:26:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-24</time>
+        <a href="/2019/08/27/java中的注解/" class="archive-article-date">
+  	<time datetime="2019-08-27T13:56:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-27</time>
 </a>
 <!-- 不蒜子统计 --><span id="busuanzi_container_page_pv" style="display:none" class="archive-article-date"><i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次</span>
 
@@ -196,56 +196,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="使用迭代器"><a href="#使用迭代器" class="headerlink" title="使用迭代器"></a>使用迭代器</h4><p>我们知道string对象或者vector对象可以用下表访问，除了下表c++还提供了迭代器访问</p>
-<p>我们可以通过begin和end方法获取迭代器</p>
-<p>此外迭代器的语法与指针相类似</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span> b = v.begin();</span><br><span class="line"><span class="keyword">auto</span> e = v.end();</span><br></pre></td></tr></table></figure>
+        <h1 id="java中的注解"><a href="#java中的注解" class="headerlink" title="java中的注解"></a>java中的注解</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ul>
+<li>说明程序，给计算机看的注释</li>
+<li>定义: 注解（Annotation），也叫元数据。一种代码级别的说明。它是JDK1.5及以后版本引入的一个特性，与类、接口、枚举是在同一个层次。它可以声明在包、类、字段、方法、局部变量、方法参数等的前面，用来对这些元素进行说明，注释。</li>
+</ul>
+<p>作用分类：<br>1.编写文档：通过代码里标识的元数据生成文档【生成文档doc文档】<br>2.代码分析：通过代码里标识的元数据对代码进行分析【使用反射】<br>3.编译检查：通过代码里标识的元数据让编译器能够实现基本的编译检查【Override】</p>
 <a id="more"></a>
-<p>begin成员返回的是容器第一个元素</p>
-<p>end成员负责返回指向容器“尾元素的下一个位置”的迭代器，也就是容器最后一个元素的下个元素，该迭代器指示的是容器的一个本不存在的<strong>”尾后元素“</strong> ，该迭代器没有任何意义，该迭代器在容器为空下通常用于和begin返回的迭代器比较，如果begin（）和end（）返回的迭代器相同，则表示容器为空。</p>
-<p>我们通常在操作字符串时会判断字符串是否为空，利用迭代器的特性我们可以写成</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">s</span><span class="params">(<span class="string">"some things"</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">if</span><span class="params">(s.begin() != s.end())</span><span class="comment">//判断字符串是否为空</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//以下写你要写的代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<h4 id="迭代器运算符"><a href="#迭代器运算符" class="headerlink" title="迭代器运算符"></a>迭代器运算符</h4><table>
-<thead>
-<tr>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">解释</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">*iter</td>
-<td style="text-align:center">返回迭代器所指向的元素</td>
-</tr>
-<tr>
-<td style="text-align:center">iter-&gt;mem</td>
-<td style="text-align:center">箭头运算符相当于（*iter）.mem</td>
-</tr>
-<tr>
-<td style="text-align:center">++iter</td>
-<td style="text-align:center">指向容器的下个元素</td>
-</tr>
-<tr>
-<td style="text-align:center">iter1==iter2</td>
-<td style="text-align:center">判断迭代器是否相等</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h4 id="迭代器类型"><a href="#迭代器类型" class="headerlink" title="迭代器类型"></a>迭代器类型</h4><p>一般来说我们不知道迭代器的精准类型，c++primer上指出拥有迭代器的标准库类型使用iterator和const_iterator来表示迭代器的类型</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator it	<span class="comment">//it能读写vector&lt;int&gt;的元素</span></span><br><span class="line"><span class="built_in">string</span>::iterator it2	<span class="comment">//it2能读写string对象中的字符</span></span><br><span class="line">    </span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::const_iterator it	<span class="comment">//it只能读vector&lt;int&gt;的元素</span></span><br><span class="line"><span class="built_in">string</span>::const_iterator it2	<span class="comment">//it2能读string对象中的字符</span></span><br></pre></td></tr></table></figure>
-<p>特别指出的是如果vector对象或者string对象是一个常量，只能使用const_iterator，如果不是常量，那既可使用iterator也能使用const_iterator</p>
-<hr>
-<h4 id="begin和end"><a href="#begin和end" class="headerlink" title="begin和end"></a>begin和end</h4><p>begin和end返回的具体类型由对象是否为常量决定，如果是常量返回const_iterator，不是常量返回iterator</p>
-<p>有时候我们需要主动返回常量类型，c++11标准引入了两个新函数，cbegin和cend，即不管对象是否为常量都会返回const_iterator</p>
-<hr>
-<h4 id="失效的迭代器"><a href="#失效的迭代器" class="headerlink" title="失效的迭代器"></a>失效的迭代器</h4><p>任何一种动态增加vector对象容量的操作例如push_back,都会使迭代器失效</p>
-<p>所以我们得出结论，只要使用了迭代器的循环体，都不要向迭代器所属的容器添加元素</p>
-<hr>
-<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p>下面是c++primer中一个程序实例</p>
-<p>该程序实现了将string对象的第一个字母改成大写</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">s</span><span class="params">(<span class="string">"some things"</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">if</span><span class="params">(s.begin()!=s.end())</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">auto</span> it = s.begin();</span><br><span class="line">    *it = <span class="built_in">toupper</span>(*it);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="JDK中预定义的注解"><a href="#JDK中预定义的注解" class="headerlink" title="JDK中预定义的注解"></a>JDK中预定义的注解</h2><p>@Override 它的作用是对覆盖超类中方法的方法进行标记，如果被标记的方法并没有实际覆盖超类中的方法，则编译器会发出错误警告。</p>
+<p>@Deprecated 标注的内容表示已过时</p>
+<p>@SuppressWarnings(参数) 压制警告<br>参数有：<br>deprecation，使用了过时的类或方法时的警告<br>unchecked，执行了未检查的转换时的警告<br>fallthrough，当 switch 程序块直接通往下一种情况而没有 break 时的警告<br>path，在类路径、源文件路径等中有不存在的路径时的警告<br>serial，当在可序列化的类上缺少serialVersionUID 定义时的警告<br>finally ，任何 finally 子句不能正常完成时的警告<br>all，关于以上所有情况的警告</p>
+<h2 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h2><h3 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h3><p>元注解<br>public @interface 注解名称</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target</span>(ElementType.ANNOTATION_TYPE) <span class="comment">//元注解</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Myann &#123;</span><br><span class="line">    <span class="comment">//下面写你需要定义的属性</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>注解的本质： 注解的本质就是一个接口,该接口默认继承于Annotation接口</li>
+</ul>
+<p>属性: 接口中的方法<br>要求：</p>
+<p>1.返回值必须是以下类型<br>基本数据类型<br>String<br>枚举<br>注解<br>以上类型的数组</p>
+<p>2.若注解中定义了属性，则需在使用注解时为注解赋值</p>
+<p>3.可以使用defaul给属性进行默认赋值，使用注解时可以不给默认赋值的属性赋值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target</span>(ElementType.ANNOTATION_TYPE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Myann &#123;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span></span>; <span class="comment">//不用default，则使用时必须赋值</span></span><br><span class="line"><span class="function">String <span class="title">name</span><span class="params">()</span> <span class="keyword">default</span> "王小虎"</span>; <span class="comment">//已经设置默认值，使用时无需赋值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Myann</span>(age = <span class="number">12</span>)    <span class="comment">//age必修赋值,name则无需赋值</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Myanntest</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>4.若定义的属性名是value，使用时可以直接赋值不必写=</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target</span>(ElementType.ANNOTATION_TYPE)</span><br><span class="line"> <span class="keyword">public</span> <span class="meta">@interface</span> Myann &#123;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">value</span><span class="params">()</span></span>; <span class="comment">//特殊属性名value</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Myann</span>(<span class="number">12</span>)    <span class="comment">//无需写age = 12</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Myanntest</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="元注解"><a href="#元注解" class="headerlink" title="元注解"></a>元注解</h3><p>概念 元注解就是修饰注解的注解</p>
+<p>1.@Targe：描述注解能够作用的位置<br>ElementType的取值<br>TYPE： 可作用于类上<br>METHOD: 可作用于方法上<br>FIELD: 可作用于成员变量上</p>
+<p>2.@Retention：描述注解被保留的阶段<br>   Retention(RetentionPolicy.RUNTIME) 注解被保留到运行时阶段</p>
+<p>3.@Document：描述注解是否会被api文档抽取</p>
+<p>4.@Inherited：描述注解是否被子类继承</p>
+<h2 id="获取注解"><a href="#获取注解" class="headerlink" title="获取注解"></a>获取注解</h2><ul>
+<li>在程序中解析注解：获取注解中属性的值 (可以代替配置文件或者xml)<br>  1.获取注解的位置getAnnotation(注解名.class)<br>  2.获取注解中的值<br>  调用注解中定义的方法，获取注解的值<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Myann</span>(age = <span class="number">12</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Myanntest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Class&lt;Myanntest&gt; cl = Myanntest.class;</span><br><span class="line">        Myann myann = cl.getAnnotation(Myann.class);</span><br><span class="line">        <span class="keyword">int</span> age = myann.age();</span><br><span class="line">        String name = myann.name();</span><br><span class="line"></span><br><span class="line">        System.out.println(age);</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出结果</span></span><br><span class="line"><span class="comment">//12</span></span><br><span class="line"><span class="comment">//王小虎</span></span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
 
@@ -280,7 +261,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">cpp</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
@@ -292,7 +273,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/c-学习//" class="article-tag-list-link color1">c++学习</a>
+        			<a href="/categories/java学习//" class="article-tag-list-link color2">java学习</a>
         		</li>
       		
 		</ul>
@@ -347,7 +328,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/24/初识迭代器/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/27/java中的注解/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -361,15 +342,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/04/24/2019-04-24-数组和字符串/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          数组和字符串
-        
-      </div>
-    </a>
   
+    <a href="/2019/08/26/反射/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">框架设计的灵魂——反射</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -386,6 +363,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java中的注解"><span class="toc-number">1.</span> <span class="toc-text">java中的注解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#概念"><span class="toc-number">1.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JDK中预定义的注解"><span class="toc-number">1.2.</span> <span class="toc-text">JDK中预定义的注解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义注解"><span class="toc-number">1.3.</span> <span class="toc-text">自定义注解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#格式"><span class="toc-number">1.3.1.</span> <span class="toc-text">格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元注解"><span class="toc-number">1.3.2.</span> <span class="toc-text">元注解</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取注解"><span class="toc-number">1.4.</span> <span class="toc-text">获取注解</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -406,7 +396,7 @@
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2019/04/24/初识迭代器/",
+  id: "http://yoursite.com/2019/08/27/java中的注解/",
   owner: 'wzeq13',
   repo: 'wzeq13.github.io',
   oauth: {
